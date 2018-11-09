@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="6vh-h4-MCh">
+                                <rect key="frame" x="82.666666666666686" y="316.66666666666669" width="210" height="179"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RD9-14-sPb">
+                                <rect key="frame" x="73" y="220.66666666666666" width="229" height="55.999999999999972"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="43"/>
+                                <color key="textColor" red="0.55660619636891417" green="0.11339839419039087" blue="0.087456105232120343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWY-2t-VYm">
+                                <rect key="frame" x="151" y="545.66666666666663" width="73" height="35"/>
+                                <color key="backgroundColor" red="0.1293717616580311" green="0.038781892169022857" blue="0.057730193095297276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Touch me">
+                                    <color key="titleShadowColor" red="0.89797338193319731" green="0.90895101145055723" blue="0.97403254533678751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Fe-a4-yKH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22793879533678751" green="0.11205746347843043" blue="0.2095472087617983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tWY-2t-VYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xb-v3-0qO"/>
+                            <constraint firstItem="6vh-h4-MCh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EwI-Di-Pz0"/>
+                            <constraint firstItem="6vh-h4-MCh" firstAttribute="top" secondItem="RD9-14-sPb" secondAttribute="bottom" constant="40" id="IkD-9b-Nfc"/>
+                            <constraint firstItem="RD9-14-sPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RW7-1L-vTf"/>
+                            <constraint firstItem="tWY-2t-VYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acU-pJ-aXH"/>
+                            <constraint firstItem="6vh-h4-MCh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jCh-Gm-RLR"/>
+                            <constraint firstItem="tWY-2t-VYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lX0-3d-pIv"/>
+                            <constraint firstItem="tWY-2t-VYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ryc-dN-inN"/>
+                            <constraint firstItem="tWY-2t-VYm" firstAttribute="top" secondItem="6vh-h4-MCh" secondAttribute="bottom" constant="50" id="zOX-QO-Y7q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnTouch" destination="tWY-2t-VYm" id="vLd-zq-FIe"/>
+                        <outlet property="imageRuby" destination="6vh-h4-MCh" id="2Rf-xj-fu8"/>
+                        <outlet property="lblTitle" destination="RD9-14-sPb" id="Pdq-Eb-8hj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby-image" width="210.73170471191406" height="179.1219482421875"/>
+    </resources>
+</document>
